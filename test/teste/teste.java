@@ -1,6 +1,6 @@
 package teste;
 
-import ContabilityTemplateImportation.Main;
+import CleanScannerFolder.Main;
 
 public class teste {
 
