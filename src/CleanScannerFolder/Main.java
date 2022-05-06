@@ -30,9 +30,9 @@ public class Main {
         } catch (Exception e) {
             e.printStackTrace();
             FileManager.save(new File(System.getProperty("user.home")) + "\\Desktop\\JavaError.txt", getStackTrace(e));
-            System.out.println("Ocorreu um erro na aplicação: " + e);
-            System.exit(0);
+            System.out.println("Ocorreu um erro na aplicação: " + e);            
         }
+        System.exit(0);
     }
 
     private static String getStackTrace(Exception e) {
@@ -45,8 +45,7 @@ public class Main {
 
     public static String start() {
         Controller controller = new Controller();
-        
-        
+                
         Map<String, Executavel>execs = new HashMap<>();
         
         return AppRobo.rodarExecutaveis(nomeApp, execs);
